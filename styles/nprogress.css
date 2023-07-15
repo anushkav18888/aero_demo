@@ -1,0 +1,20 @@
+/* Change the color of the loading bar */
+#nprogress .bar {
+    background: purple !important;
+}
+
+/* Change the color of the spinner */
+#nprogress .spinner-icon {
+    border-top-color: purple !important;
+    border-left-color: purple !important;
+}
+
+/* Remove the spinner */
+#nprogress .spinner {
+    display: none;
+}
+
+/* Increase the thickness of the bar */
+#nprogress .bar {
+    height: 3px;
+}

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .headerLi {
+    @apply text-primaryColor hover:text-secondaryColor cursor-pointer duration-300;
+  };
+  .textColor {
+    @apply text-primaryColor
+  }
+}
+
+
+
+body{
+  background-color: #212124;
+  scroll-behavior: smooth;
+}
