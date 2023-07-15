@@ -24,6 +24,7 @@ const Header = () => {
 
 
   return (
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <div className="w-full h-20 border-b-[1px] border-b-black font-titleFont sticky top-0 z-50 px-4" style={{ backgroundColor: "#18181B" }}>
       <div className="max-w-7xl h-full mx-auto flex justify-between items-center">
         <Link href="/">
