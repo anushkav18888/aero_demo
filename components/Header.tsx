@@ -46,7 +46,7 @@ const Header = () => {
           <div className="flex items-center gap-1">
             <img
               className="w-8 h-8 rounded-full"
-              src={session ? session?.user!.image! : "https://www.vippng.com/png/detail/412-4125354_person-circle-comments-profile-icon-png-white-transparent.png"}
+              src={session ? session?.user!.image! : "https://www.seekpng.com/png/small/413-4139803_unknown-profile-profile-picture-unknown.png"}
               alt="logo"
             />
             <p className="text-sm font-medium" style={{ color: "#F3F4F6" }}>{session ? session?.user!.name : "Hello Stranger"}</p>
