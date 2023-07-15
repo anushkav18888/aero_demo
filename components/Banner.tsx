@@ -69,7 +69,7 @@ const Banner = () => {
             className="w-full h-auto md:h-[650px] object-cover"
             src={bannerImgOne}
             loading={"eager"}
-            alt="bannerImgFour"
+            alt="bannerImgOne"
           />
         </div>
         <div>
@@ -93,7 +93,7 @@ const Banner = () => {
             className="w-full h-auto md:h-[650px] object-cover"
             src={bannerImgFour}
             loading={"lazy"}
-            alt="bannerImgOne"
+            alt="bannerImgFour"
           />
         </div>
       </Slider>
