@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import Hashlink from "next/link"
+import Hashlink from "next/link";
 import logoDark from "../public/images/logoDark.png";
-import { useSession, signIn, signOut } from "next-auth/react"
+import { useSession, signIn, signOut } from "next-auth/react";
 import React, { useState } from 'react';
 
 
