@@ -8,16 +8,13 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { motion } from "framer-motion";
 
-function contact() {
+function Contact() {
   return (
     <>
       <Header />
-      <div
-        className="min-h-screen flex flex-col justify-center"
-        
-      >
+      <div className="min-h-screen flex flex-col justify-center">
         <motion.div
-          className="max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg"
+          className="max-w-full lg:max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -28,7 +25,7 @@ function contact() {
           }}
         >
           <div className="md:flex">
-            <div className="w-full p-20" style={{backgroundColor:"#18181B"}}>
+            <div className="w-full p-20" style={{ backgroundColor: "#18181B" }}>
               <h1 className="textColor font-bold text-4xl mb-8 text-center">
                 Contact Us
               </h1>
@@ -53,7 +50,8 @@ function contact() {
               >
                 <FaInstagram className="text-pink-600 mr-3 w-16 h-16" />
                 <a
-                  href="https://www.instagram.com/aea_iitb/" target="_blank"
+                  href="https://www.instagram.com/aea_iitb/"
+                  target="_blank"
                   className="textColor text-xl hover:text-pink-600 transition-colors"
                 >
                   Follow us on Instagram
@@ -96,4 +94,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default Contact;
