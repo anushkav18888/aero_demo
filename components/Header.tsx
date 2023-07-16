@@ -1,27 +1,17 @@
+import React, { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import Hashlink from "next/link"
+import Hashlink from "next/link";
 import logoDark from "../public/images/logoDark.png";
-import { useSession, signIn, signOut } from "next-auth/react"
-import React, { useState } from 'react';
-
-
-
-
+import { useSession, signIn, signOut } from "next-auth/react";
 
 const Header = () => {
-  const { data: session } = useSession()
+  const { data: session } = useSession();
   const [isActive, setActive] = useState(false);
 
   const handleClick = () => {
-    // console.log("button clicked")
     setActive(!isActive);
   };
-
-
-
-
-
 
   return (
     <div className="w-full h-20 border-b-[1px] border-b-black font-titleFont sticky top-0 z-50 px-4" style={{ backgroundColor: "#18181B" }}>
@@ -31,15 +21,29 @@ const Header = () => {
             <Image width={80} height={80} src={logoDark} alt="logoDark" />
           </div>
         </Link>
-        <div>
-          <ul className="hidden lg:inline-flex gap-8 uppercase text-sm font-semibold" >
+        {/* Hamburger Icon */}
+        <div className="lg:hidden">
+          <button onClick={handleClick}>
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+        {/* Mobile Menu */}
+        <div className={`lg:hidden ${isActive ? 'block' : 'hidden'}`}>
+          <ul className="uppercase text-sm font-semibold" >
             <Link href="/" ><li onClick={handleClick} className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Home</li></Link>
             <Hashlink href="/#posts"><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Blogs</li></Hashlink>
-            {/* <li className="headerLi">Pages</li> */}
             <Link href="/team"><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Team</li></Link>
             <Link href="/contact"><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`}>Contact</li></Link>
-            {/* <li className="headerLi">Contact</li> */}
           </ul>
+        </div>
+        {/* Desktop Menu */}
+        <div className="hidden lg:inline-flex gap-8 uppercase text-sm font-semibold">
+          <Link href="/" ><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Home</li></Link>
+          <Hashlink href="/#posts"><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Blogs</li></Hashlink>
+          <Link href="/team"><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Team</li></Link>
+          <Link href="/contact"><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`}>Contact</li></Link>
         </div>
 
         <div className="flex items-center gap-8 text-lg">
@@ -58,14 +62,10 @@ const Header = () => {
               Sign In
             </button>
           }
-
-
         </div>
       </div>
-    </div >
+    </div>
   );
 };
-
-
 
 export default Header;
