@@ -21,23 +21,6 @@ const Header = () => {
             <Image width={80} height={80} src={logoDark} alt="logoDark" />
           </div>
         </Link>
-        {/* Hamburger Icon */}
-        <div className="lg:hidden">
-          <button onClick={handleClick}>
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
-        </div>
-        {/* Mobile Menu */}
-        <div className={`lg:hidden ${isActive ? 'block' : 'hidden'}`}>
-          <ul className="uppercase text-sm font-semibold" >
-            <Link href="/" ><li onClick={handleClick} className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Home</li></Link>
-            <Hashlink href="/#posts"><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Blogs</li></Hashlink>
-            <Link href="/team"><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Team</li></Link>
-            <Link href="/contact"><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`}>Contact</li></Link>
-          </ul>
-        </div>
         {/* Desktop Menu */}
         <div className="hidden lg:inline-flex gap-8 uppercase text-sm font-semibold">
           <Link href="/" ><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Home</li></Link>
@@ -62,6 +45,24 @@ const Header = () => {
               Sign In
             </button>
           }
+        </div>
+
+        {/* Hamburger Icon */}
+        <div className="lg:hidden">
+          <button onClick={handleClick} className="text-white">
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+        {/* Mobile Menu */}
+        <div className={`lg:hidden fixed inset-0 bg-black bg-opacity-70 z-50 ${isActive ? 'block' : 'hidden'}`}>
+          <ul className="text-white text-center mt-10">
+            <Link href="/" ><li onClick={handleClick} className={`block my-4 ${isActive ? 'active:text-secondaryColor' : ''}`} >Home</li></Link>
+            <Hashlink href="/#posts"><li className={`block my-4 ${isActive ? 'active:text-secondaryColor' : ''}`} >Blogs</li></Hashlink>
+            <Link href="/team"><li className={`block my-4 ${isActive ? 'active:text-secondaryColor' : ''}`} >Team</li></Link>
+            <Link href="/contact"><li className={`block my-4 ${isActive ? 'active:text-secondaryColor' : ''}`}>Contact</li></Link>
+          </ul>
         </div>
       </div>
     </div>
