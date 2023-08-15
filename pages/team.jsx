@@ -121,7 +121,7 @@ const teamMembers = [
   {
     name: "Adarsh Prajapati",
     role: "Media Nominee",
-    image: "/images/profilesImages/Adarsh.jpg",
+    image: "/images/profilesImages/Adarsh.JPG",
     facebook: "https://www.facebook.com/profile.php?id=61550057250823",
     linkedin: "https://www.linkedin.com/in/adarsh-prajapati-47911b228/",
     instagram: "https://www.instagram.com/moraldo785/",
