@@ -119,12 +119,12 @@ const teamMembers = [
     instagram: "https://instagram.com/sourabhchouhan2003?igshid=ZDdkNTZiNTM",
   },
   {
-    name: "Vibha Karnad",
+    name: "Adarsh Prajapati",
     role: "Media Nominee",
-    image: "/images/profilesImages/vibha.jpg",
-    facebook: "https://www.facebook.com/profile.php?id=100075732052582",
-    linkedin: "https://www.linkedin.com/mwlite/in/vibha-karnad-b59416221",
-    instagram: "https://instagram.com/karnadvibha",
+    image: "/images/profilesImages/Adarsh.jpg",
+    facebook: "https://www.facebook.com/profile.php?id=61550057250823",
+    linkedin: "https://www.linkedin.com/in/adarsh-prajapati-47911b228/",
+    instagram: "https://www.instagram.com/moraldo785/",
   },
   {
     name: "Khushpreet Kaur",
