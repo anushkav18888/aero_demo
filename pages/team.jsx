@@ -121,12 +121,12 @@ const teamMembers = [
   },
 
   {
-    name: "Raviteja Y S",
-    role: "Dept. PG Cultural Secretary",
-    image: "/images/profilesImages/raviteja.jpg",
-    facebook: "https://www.facebook.com/raviteja.ys",
-    linkedin: "https://www.linkedin.com/in/ravitejays/",
-    instagram: "https://www.instagram.com/raviteja.iitb",
+    name: "Ninu Limboo",
+    role: "PG Representative",
+    image: "/images/profilesImages/ninu.JPG",
+    facebook: "https://www.facebook.com/pratham.patel.923?mibextid=2JQ9oc",
+    linkedin: "https://www.linkedin.com/in/ninu-limboo-5407a11b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiJjQf5xQSfOTZ4spvvxD2Q%3D%3D",
+    instagram: "https://www.instagram.com/naomi_khewa/",
   },
   {
     name: "Apurva Chavda",
