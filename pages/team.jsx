@@ -110,14 +110,7 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/saurabh-prajapati-526084252",
     instagram: "https://instagram.com/prajapatisaurabh2002?igshid=ZDdkNTZiNTM=",
   },
-  {
-    name: "Sourabh Chouhan",
-    role: "Design Nominee",
-    image: "/images/profilesImages/sourabh.jpg",
-    facebook: "https://www.facebook.com/sourabh.chouhan.77398?mibextid=ZbWKwL",
-    linkedin: "https://www.linkedin.com/in/sourabh-chouhan-252510241",
-    instagram: "https://instagram.com/sourabhchouhan2003?igshid=ZDdkNTZiNTM",
-  },
+
   {
     name: "Adarsh Prajapati",
     role: "Media Nominee",
@@ -126,14 +119,7 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/adarsh-prajapati-47911b228/",
     instagram: "https://www.instagram.com/moraldo785/",
   },
-  {
-    name: "Khushpreet Kaur",
-    role: "Media Nominee",
-    image: "/images/profilesImages/khushpreet.jpg",
-    facebook: "https://www.facebook.com/khushpreet.kaur.376695?mibextid=ZbWKwL",
-    linkedin: "https://www.linkedin.com/in/khuspreet-kaur-123710155/",
-    instagram: "https://instagram.com/khuspreet_13_",
-  },
+
   {
     name: "Raviteja Y S",
     role: "Dept. PG Cultural Secretary",
