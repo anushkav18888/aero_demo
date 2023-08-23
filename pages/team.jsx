@@ -85,12 +85,12 @@ const teamMembers = [
     instagram: "https://www.instagram.com/varun__04/",
   },
   {
-    name: "Arjun Bora",
+    name: "Arhat Gedam",
     role: "Events Nominee",
-    image: "/images/profilesImages/bora.jpg",
-    facebook: "https://instagram.com/arjunbora73?igshid=ZDdkNTZiNTM=",
-    linkedin: "https://www.linkedin.com/in/arjun-bora-46a38723b",
-    instagram: "https://www.instagram.com/arjunbora73/",
+    image: "/images/profilesImages/Arhat Gedam.jpg",
+    facebook: "https://www.facebook.com/profile.php?id=100086681690731",
+    linkedin: "https://www.linkedin.com/in/arhat-gedam-ba3a75253/",
+    instagram: "https://www.instagram.com/arhat_293/",
   },
   {
     name: "Patil Amey Sadanand",
