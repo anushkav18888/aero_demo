@@ -11,78 +11,31 @@ import Header from "../components/Header";
 
 const teamMembers = [
   {
-    name: "Gourav Kumar",
+    name: "Pratham Patel",
     role: "DGSec",
-    image: "/images/profilesImages/Gourav.jpg",
-    facebook:
-      "https://www.facebook.com/profile.php?id=100063702969133&mibextid=ZbWKwL",
-    linkedin: "https://www.linkedin.com/in/gourav-kumar-950240193",
-    instagram: "https://www.instagram.com/_kr.gourav/",
-  },
-  {
-    name: "Srinivas Rishi Datta S",
-    role: "DDGSec UG",
-    image: "/images/profilesImages/rishi.jpg",
-    facebook: "https://www.facebook.com/rishi.datta.58",
-    linkedin: "https://www.linkedin.com/in/rishi-datta-a8ab75213",
-    instagram: "https://instagram.com/risshhiii_?igshid=YjNmNGQ3MDY",
-  },
-  {
-    name: "Krishna Kishore",
-    role: "DDGSec PG",
-    image: "/images/profilesImages/kishore.jpg",
-    facebook: "https://www.facebook.com/kishore.kishu.777/",
-    linkedin: "https://www.linkedin.com/in/krishna-kishore2207/",
-    instagram: "https://www.instagram.com/quirkyraven/",
-  },
-  {
-    name: "Srihari Kuchika",
-    role: "Department PG Representative",
-    image: "/images/profilesImages/srihari.jpg",
-    facebook: "#",
-    linkedin: "https://www.linkedin.com/in/srihari-kuchika-95a628208",
-    instagram: "https://www.instagram.com/srihari00/",
-  },
-  {
-    name: "Manish Kumar Das",
-    role: "Ph.D. Representative",
-    image: "/images/profilesImages/manish.jpg",
-    facebook: "https://www.facebook.com/DasKBMkumar?mibextid=ZbWKwL",
-    linkedin: "https://www.linkedin.com/in/manish-kumar-das-b41423154",
-    instagram: "https://www.instagram.com/kbdas_manish/",
-  },
-  {
-    name: "Prahtam Patel",
-    role: "Events Head",
     image: "/images/profilesImages/pratham.jpg",
-    facebook: "https://www.facebook.com/pratham.patel.923?mibextid=ZbWKwL",
-    linkedin: "https://www.linkedin.com/in/pratham-patel-20101b222",
-    instagram: "https://www.instagram.com/luckyfer9/",
-  },
-  {
-    name: "Amit Rohila",
-    role: "Web Nominee",
-    image: "/images/profilesImages/amit.jpeg",
-    facebook: "https://www.facebook.com/profile.php?id=100081489781474",
-    linkedin: "https://www.linkedin.com/in/amit-kumar-0b0540234/",
-    instagram: "https://www.instagram.com/amit_rohila33/",
-  },
-  {
-    name: "Yatarth Manchanda",
-    role: "Web Nominee",
-    image: "/images/profilesImages/yatarth.jpg",
-    facebook: "https://www.facebook.com/profile.php?id=100090041949870",
-    linkedin: "https://www.linkedin.com/in/yatharth-manchanda-6a4995223/",
-    instagram: "https://instagram.com/yat_25.1?igshid=ZDdkNTZiNTM=",
-  },
-  {
-    name: "Varun Gupta",
-    role: "Events Nominee",
-    image: "/images/profilesImages/varun.jpg",
     facebook:
-      "https://www.facebook.com/profile.php?id=100089697277826&mibextid=LQQJ4d",
-    linkedin: "https://www.linkedin.com/in/varun-gupta-8963a8223",
-    instagram: "https://www.instagram.com/varun__04/",
+      "https://www.facebook.com/pratham.patel.923?mibextid=2JQ9oc",
+    linkedin: "https://www.linkedin.com/in/pratham-patel-20101b222",
+    instagram: "https://instagram.com/luckyfer9?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D",
+  },
+  
+  {
+    name: "Ninu Limboo",
+    role: "Department PG Representative",
+    image: "/images/profilesImages/ninu.JPG",
+    facebook: "https://www.facebook.com/pratham.patel.923?mibextid=2JQ9oc",
+    linkedin: "https://www.linkedin.com/in/ninu-limboo-5407a11b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiJjQf5xQSfOTZ4spvvxD2Q%3D%3D",
+    instagram: "https://www.instagram.com/naomi_khewa/",
+  },
+  {
+    name: "Jugal Shah",
+    role: "Events Nominee",
+    image: "/images/profilesImages/jugal.jpg",
+    facebook:
+      "https://www.facebook.com/profile.php?id=61550258878577&mibextid=ZbWKwL",
+    linkedin: "https://www.linkedin.com/in/jugal-shah-026ab1253",
+    instagram: "https://instagram.com/jugal_0108?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
   },
   {
     name: "Arhat Gedam",
@@ -92,25 +45,32 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/arhat-gedam-ba3a75253/",
     instagram: "https://www.instagram.com/arhat_293/",
   },
-  {
-    name: "Patil Amey Sadanand",
-    role: "Events Nominee",
-    image: "/images/profilesImages/amey.jpg",
-    facebook:
-      "https://www.facebook.com/profile.php?id=100073405399124&mibextid=ZbWKwL",
-    linkedin: "https://www.linkedin.com/in/amey-patil-ab77b622b",
-    instagram: "https://www.instagram.com/ameyy_patil/",
+{
+    name: "Anushka Verma",
+    role: "Web Nominee",
+    image: "/images/profilesImages/anushka.jpeg",
+    facebook: "https://www.facebook.com/profile.php?id=100070530461675",
+    linkedin: "https://www.linkedin.com/in/anushka-verma-534084217/",
+    instagram: "https://www.instagram.com/anushkaverma18_/?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
   },
   {
-    name: "Saurabh Prajapati",
+    name: "Raghav Agrawal ",
     role: "Design Nominee",
-    image: "/images/profilesImages/saurabh.jpg",
+    image: "/images/profilesImages/raghav.JPG",
     facebook:
-      "https://www.facebook.com/profile.php?id=100090964253443&mibextid=ZbWKwL",
-    linkedin: "https://www.linkedin.com/in/saurabh-prajapati-526084252",
-    instagram: "https://instagram.com/prajapatisaurabh2002?igshid=ZDdkNTZiNTM=",
+      "https://www.facebook.com/profile.php?id=100085359233047",
+    linkedin: "https://www.linkedin.com/in/raghavagraw/",
+    instagram: "https://www.instagram.com/singhania5731/",
   },
-
+  {
+    name: "Ghoshank Nanhe",
+    role: "Content Nominee",
+    image: "/images/profilesImages/ghoshank.jpg",
+    facebook:
+      "https://www.facebook.com/ghoshank.nanhe.94",
+    linkedin: "https://www.linkedin.com/in/ghoshank-nanhe-7b2124245",
+    instagram: "https://instagram.com/always_ghoshank?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
+  },
   {
     name: "Adarsh Prajapati",
     role: "Media Nominee",
@@ -120,14 +80,6 @@ const teamMembers = [
     instagram: "https://www.instagram.com/moraldo785/",
   },
 
-  {
-    name: "Ninu Limboo",
-    role: "PG Representative",
-    image: "/images/profilesImages/ninu.JPG",
-    facebook: "https://www.facebook.com/pratham.patel.923?mibextid=2JQ9oc",
-    linkedin: "https://www.linkedin.com/in/ninu-limboo-5407a11b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiJjQf5xQSfOTZ4spvvxD2Q%3D%3D",
-    instagram: "https://www.instagram.com/naomi_khewa/",
-  },
   {
     name: "Apurva Chavda",
     role: "PG OCR",
