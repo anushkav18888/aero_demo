@@ -143,12 +143,12 @@ const teamMembers = [
     instagram: "https://www.instagram.com/raviteja.iitb",
   },
   {
-    name: "Shraddha Barua",
+    name: "Apurva Chavda",
     role: "PG OCR",
-    image: "/images/profilesImages/shraddha.jpg",
-    facebook: "https://www.facebook.com/shraddha.barua?mibextid=ZbWKwL",
-    linkedin: "https://www.linkedin.com/in/shraddha-barua/",
-    instagram: "https://www.instagram.com/enthralling_smile",
+    image: "/images/profilesImages/apurva.JPG",
+    facebook: "https://www.facebook.com/apurva.chavda.741?mibextid=ZbWKwL",
+    linkedin: "https://www.linkedin.com/in/adchavda741",
+    instagram: "https://instagram.com/adchavda741?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
   },
   {
     name: "Vikash Kumar",
