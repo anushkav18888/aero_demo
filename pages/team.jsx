@@ -151,13 +151,13 @@ const teamMembers = [
     instagram: "https://instagram.com/adchavda741?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
   },
   {
-    name: "Vikash Kumar",
+    name: "Kartik Vaishnav",
     role: "SARC Coordinator",
-    image: "/images/profilesImages/vikash.jpg",
+    image: "/images/profilesImages/karthik.JPG",
     facebook:
-      "https://www.facebook.com/profile.php?id=100074389008829&mibextid=ZbWKwL",
-    linkedin: "https://www.linkedin.com/in/vikash-swami-251520241",
-    instagram: "https://instagram.com/v_s__121?igshid=ZDdkNTZiNTM=",
+      "https://www.facebook.com/kartik.vaishnav.140?mibextid=ZbWKwL",
+    linkedin: "https://www.linkedin.com/in/kartik-vaishnav-12a758251",
+    instagram: "https://instagram.com/kartik__vaishnav?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
   },
 ];
 const team = () => {
