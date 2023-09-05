@@ -19,6 +19,15 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/pratham-patel-20101b222",
     instagram: "https://instagram.com/luckyfer9?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D",
   },
+   {
+    name: "Sourabh Chouhan ",
+    role: "Deputy Department General Secretary",
+    image: "/images/profilesImages/sourabh.jpg",
+    facebook:
+      "https://www.facebook.com/sourabh.chouhan.77398?mibextid=ZbWKwL",
+    linkedin: "https://www.linkedin.com/in/sourabh-chouhan-252510241",
+    instagram: "https://instagram.com/sourabhchouhan2003?igshid=ZDdkNTZiNTM=",
+  },
   
   {
     name: "Ninu Limboo",
@@ -27,6 +36,22 @@ const teamMembers = [
     facebook: "https://www.facebook.com/pratham.patel.923?mibextid=2JQ9oc",
     linkedin: "https://www.linkedin.com/in/ninu-limboo-5407a11b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiJjQf5xQSfOTZ4spvvxD2Q%3D%3D",
     instagram: "https://www.instagram.com/naomi_khewa/",
+  },
+    {
+    name: "Rajat Soni",
+    role: "Deputy Department General Secretary (PG)",
+    image: "/images/profilesImages/rajat.jpg",
+    facebook: "https://www.facebook.com/Rajat.Sarkar.305069",
+    linkedin: "https://www.linkedin.com/in/rajat-soni-96797474732317290305",
+    instagram: "https://www.instagram.com/rajat_soni03/?hl=en",
+  },
+    {
+    name: "Chowdegowda C N ",
+    role: "PG Department Cultural secretary ",
+    image: "/images/profilesImages/naganna.jpg",
+    facebook: "https://www.facebook.com/profile.php?id=61550476272019",
+    linkedin: "https://www.linkedin.com/in/chowdegowda-c-n-6a584a152",
+    instagram: "https://www.instagram.com/chowdegowd/",
   },
   {
     name: "Jugal Shah",
@@ -38,9 +63,17 @@ const teamMembers = [
     instagram: "https://instagram.com/jugal_0108?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
   },
   {
+    name: "Ronak sonkiya",
+    role: "Events Nominee",
+    image: "/images/profilesImages/ronak.JPG",
+    facebook: "https://www.facebook.com/profile.php?id=100086681690731",
+    linkedin: "https://www.linkedin.com/in/ronak-sonkiya-8a6660269",
+    instagram: "https://instagram.com/ronak_sonkiya?igshid=MjEwN2IyYWYwYw==",
+  },
+    {
     name: "Arhat Gedam",
     role: "Events Nominee",
-    image: "/images/profilesImages/Arhat Gedam.jpg",
+    image: "/images/profilesImages/arhat.JPG",
     facebook: "https://www.facebook.com/profile.php?id=100086681690731",
     linkedin: "https://www.linkedin.com/in/arhat-gedam-ba3a75253/",
     instagram: "https://www.instagram.com/arhat_293/",
@@ -52,6 +85,15 @@ const teamMembers = [
     facebook: "https://www.facebook.com/profile.php?id=100070530461675",
     linkedin: "https://www.linkedin.com/in/anushka-verma-534084217/",
     instagram: "https://www.instagram.com/anushkaverma18_/?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
+  },
+ {
+    name: "Hrutik sanjay pokharkar  ",
+    role: "Design Nominee",
+    image: "/images/profilesImages/Hrutik sanjay pokharkar .jpg",
+    facebook:
+      "https://www.facebook.com/profile.php?id=100005450266635&mibextid=9R9pXO",
+    linkedin: "https://www.linkedin.com/in/hrutik-pokharkar-9b445713a",
+    instagram: "https://instagram.com/hrutik_1303?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
   },
   {
     name: "Raghav Agrawal ",
