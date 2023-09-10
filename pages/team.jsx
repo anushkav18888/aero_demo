@@ -29,14 +29,6 @@ const teamMembers = [
     instagram: "https://instagram.com/sourabhchouhan2003?igshid=ZDdkNTZiNTM=",
   },
   
-  {
-    name: "Ninu Limboo",
-    role: "Department PG Representative",
-    image: "/images/profilesImages/ninu.jpeg",
-    facebook: "https://www.facebook.com/pratham.patel.923?mibextid=2JQ9oc",
-    linkedin: "https://www.linkedin.com/in/ninu-limboo-5407a11b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiJjQf5xQSfOTZ4spvvxD2Q%3D%3D",
-    instagram: "https://www.instagram.com/naomi_khewa/",
-  },
     {
     name: "Rajat Soni",
     role: "Deputy Department General Secretary (PG)",
@@ -44,6 +36,14 @@ const teamMembers = [
     facebook: "https://www.facebook.com/Rajat.Sarkar.305069",
     linkedin: "https://www.linkedin.com/in/rajat-soni-96797474732317290305",
     instagram: "https://www.instagram.com/rajat_soni03/?hl=en",
+  },
+    {
+    name: "Ninu Limboo",
+    role: "Department PG Representative",
+    image: "/images/profilesImages/ninu.jpeg",
+    facebook: "https://www.facebook.com/pratham.patel.923?mibextid=2JQ9oc",
+    linkedin: "https://www.linkedin.com/in/ninu-limboo-5407a11b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiJjQf5xQSfOTZ4spvvxD2Q%3D%3D",
+    instagram: "https://www.instagram.com/naomi_khewa/",
   },
     {
     name: "Chowdegowda C N ",
