@@ -20,7 +20,7 @@ const Footer = () => {
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 justify-center items-center md:justify-between">
         <div className="flex items-center gap-3">
-          <Image src={logoDark} width={80} height={80} alt="logo" />
+        {/*  <Image src={logoDark} width={200} height={200} alt="logo" />*/}
           <p className="flex items-center text-sm font-titleFont gap-1">
             <AiOutlineCopyrightCircle className="mt-[1px]" />
             AEA Council || all rights reserved

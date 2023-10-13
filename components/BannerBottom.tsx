@@ -1,38 +1,83 @@
-import React from "react";
-import { MdOutlineMonitor } from "react-icons/md";
-import { IoMdHeartEmpty } from "react-icons/io";
-import { GoComment } from "react-icons/go";
+import React, { useState } from "react";
+import Image from "next/image";
+import Activity1 from "../public/images/group.jpeg";
+import Activity2 from "../public/images/peakpx.jpg";
 
 const BannerBottom = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const backgroundImageStyle = {
+    backgroundImage: `url(${Activity2.src})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    transition: 'filter 0.3s ease-in-out',
+    width: '99vw', // Set the width to 100% of the viewport width
+    height: '10px', // Change the height to 10 pixels (or any other value)
+   
+    top: 0, // Attach to the top
+    left: 0, // Attach to the left
+  };
+
+  const handleActivity1Hover = () => {
+    setIsHovered(true);
+  };
+
+  const handleActivity1MouseOut = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <div className="max-w-7xl mx-auto flex flex-col gap-10 lg:gap-0 lg:flex-row justify-center items-center h-auto lg:h-60 bg-bgColor text-white py-10 px-8 -mt-20 z-50" style={{backgroundColor:"#18181B"}}>
-      <div className="w-full lg:w-[60%] flex flex-col gap-3">
-        <p className="text-sm uppercase font-bodyFont font-semibold text-white/50">
-          My Blog
-        </p>
-        <h3 className="font-bold text-xl md:text-3xl">
-          These 7 things will change the way you approach learning!
-        </h3>
-        <p className="text-xs text-white/50">Camila Hoffman / 4 weeks ago</p>
-      </div>
-      <div className="w-full lg:w-[40%] flex items-center justify-center gap-2 lg:gap-8">
-        <div className="w-full flex flex-col items-center group">
-          <MdOutlineMonitor className="text-4xl text-gray-300 group-hover:text-white duration-300" />
-          <p className="text-xs md:text-sm font-titleFont text-white/50 group-hover:text-white">
-            watch on youtube
-          </p>
+    <div className="bg-grey text-black min-h-screen flex items-center justify-center" style={backgroundImageStyle}>
+      <style jsx>{`
+        .banner-title,
+        .banner-subtitle,
+        .banner-description {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start; // Adjust alignment to the bottom left
+          transition: transform 0.3s ease-in-out;
+        }
+        .activity1 {
+          width: 458px; // Set the width
+          height: 364px; // Set the height to make it a square
+          overflow: hidden;
+          border: 4px solid white;
+          transform: scale(${isHovered ? 1.1 : 1});
+          transition: transform 0.3s ease-in-out;
+          margin-left: -205px;
+          margin-top: 150px; // Add margin to separate it from text
+        }
+      `}</style>
+      <div className="max-w-4xl mx-20 flex flex-wrap items-center">
+        <div
+          className={`activity1 ${isHovered ? 'zoomed' : ''}`}
+          onMouseOver={handleActivity1Hover}
+          onMouseOut={handleActivity1MouseOut}
+        >
+          <Image
+            src={Activity1}
+            alt="Activity1"
+            layout="responsive"
+            width={400}
+            height={400}
+            objectFit="cover"
+          />
         </div>
-        <div className="w-full flex flex-col items-center justify-center group">
-          <IoMdHeartEmpty className="text-4xl text-gray-300 group-hover:text-white duration-300" />
-          <p className="text-xs md:text-sm font-titleFont text-white/50 group-hover:text-white">
-            like our contents
-          </p>
-        </div>
-        <div className="w-full flex flex-col items-center justify-center group">
-          <GoComment className="text-4xl text-gray-300 group-hover:text-white duration-300" />
-          <p className="text-xs md:text-sm font-titleFont text-white/50 group-hover:text-white">
-            place comments
-          </p>
+        <div className="w-full lg:w-1/2 p-9" style={{ marginTop: '210px' }}>
+          <div>
+            <h1 className="text-5xl font-bold text-white mb-1 banner-title">
+              AEA
+            </h1>
+
+            <h5 className="text-3xl font-bold text-white mb-10 banner-subtitle">
+              WHO ARE WE?
+            </h5>
+            <p className="text-lg text-white banner-description">
+              Aerospace is a dynamic and pioneering field that encompasses the
+              study, design, development, and exploration of Earth's atmosphere
+              and beyond...
+            </p>
+          </div>
         </div>
       </div>
     </div>

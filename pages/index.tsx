@@ -4,19 +4,10 @@ import Banner from "../components/Banner";
 import BannerBottom from "../components/BannerBottom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Counter from "../components/Counter";
 import { sanityClient, urlFor } from "../sanity"
-import { Post as PostType } from "../typings";
-import Image from "next/image";
-import Link from "next/link";
 
-
-
-
-interface Props {
-  posts: [PostType]
-}
-
-export default function Home({ posts }: Props) {
+export default function Home() {
 
   return (
     <div>
@@ -24,24 +15,28 @@ export default function Home({ posts }: Props) {
         <title>Innovation and discovery beyond our skies</title>
         <link rel="icon" href="/smallLogo.ico" />
       </Head>
+      
 
+     
       <main className="font-bodyFont">
-        {/* ============ Header Start here ============ */}
-        <Header />
-        {/* ============ Header End here ============== */}
-        {/* ============ Banner Start here ============ */}
-        <Banner />
-        {/* ============ Banner End here ============== */}
-        <div className="max-w-7xl mx-auto h-60 relative" >
-          <BannerBottom />
-        </div>
-        <hr id="posts" className="p-10" />
+  <Header />
+ 
+  <Banner /> 
+  <BannerBottom />
+  <Counter />
+
+ 
+ 
+          
+        
+
+       {/* <hr id="posts" className="p-10" />
         <h1 className=" text-secondaryColor font font-semibold mt-2 mb-5 text-4xl  text-center" >
           Our Blogs
         </h1>
-        {/* ============ Banner-Bottom End here ======= */}
+        {/* ============ Banner-Bottom End here ======= *}
 
-        {/* ============ Post Part Start here ========= */}
+        {/* ============ Post Part Start here ========= *}
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 py-6 px-4 textColor" >
           {
@@ -65,15 +60,16 @@ export default function Home({ posts }: Props) {
             ))
           }
         </div>
+        */}
         {/* ============ Post Part End here =========== */}
         {/* ============ Footer Start here============= */}
         <Footer />
         {/* ============ Footer End here ============== */}
       </main>
+    
     </div>
   );
 }
-
 
 
 export const getServerSideProps = async () => {

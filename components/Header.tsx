@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import Hashlink from "next/link";
-import logoDark from "../public/images/logoDark.png";
 import { useSession, signIn, signOut } from "next-auth/react";
+import { useRouter } from 'next/router';
+
+import logoDark from "../public/images/logoDark.png";
 
 const Header = () => {
   const { data: session } = useSession();
   const [isActive, setActive] = useState(false);
+  const router = useRouter();
 
   const handleClick = () => {
     setActive(!isActive);
+  };
+
+  // Function to check if a given path matches the current route
+  const isCurrentRoute = (path) => {
+    return router.pathname === path;
   };
 
   return (
@@ -18,17 +25,34 @@ const Header = () => {
       <div className="max-w-7xl h-full mx-auto flex justify-between items-center">
         <Link href="/">
           <div>
-            <Image width={80} height={80} src={logoDark} alt="logoDark" />
+            <Image width={170} height={170} src={logoDark} alt="logoDark" />
           </div>
         </Link>
         {/* Desktop Menu */}
+        
         <div className="hidden lg:inline-flex gap-8 uppercase text-sm font-semibold">
-          <Link href="/" ><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Home</li></Link>
-          <Hashlink href="/#posts"><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Blogs</li></Hashlink>
-          <Link href="/team"><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`} >Team</li></Link>
-          <Link href="/contact"><li className={`headerLi ${isActive ? 'active:text-secondaryColor' : ''}`}>Contact</li></Link>
+          <ul className="list-none flex gap-8">
+            <li className={`headerLi ${isCurrentRoute('/') ? 'active:text-secondaryColor' : ''}`}>
+              <Link href="/">Home</Link>
+            </li>
+            <li className={`headerLi ${isCurrentRoute('/blogs') ? 'active:text-secondaryColor' : ''}`}>
+              <Link href="/blogs">Blogs</Link>
+            </li>
+            <li className={`headerLi ${isCurrentRoute('/activities') ? 'active:text-secondaryColor' : ''}`}>
+              <Link href="/activities">Activities</Link>
+            </li>
+            <li className={`headerLi ${isCurrentRoute('/team') ? 'active:text-secondaryColor' : ''}`}>
+              <Link href="/team">Team</Link>
+            </li>
+            <li className={`headerLi ${isCurrentRoute('https://iitbaero.github.io/') ? 'active:text-secondaryColor' : ''}`}>
+              <Link href="https://iitbaero.github.io/" target="_blank">Damp</Link>
+            </li>
+            <li className={`headerLi ${isCurrentRoute('/contact') ? 'active:text-secondaryColor' : ''}`}>
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
         </div>
-
+  
         <div className="flex items-center gap-8 text-lg">
           <div className="flex items-center gap-1">
             <img
@@ -41,7 +65,7 @@ const Header = () => {
           {
             session ? <button onClick={() => signOut()} style={{ color: "#F3F4F6" }} className="uppercase text-sm border-[1px] border-primaryColor hover:border-secondaryColor px-4 py-1 font-semibold hover:text-white rounded-md hover:bg-secondaryColor transition-all duration-300 active:bg-yellow-600">
               Sign Out
-            </button> : <button onClick={() => signIn()} style={{ color: "#F3F4F6" }} className="uppercase text-sm border-[1px] border-primaryColor hover:border-secondaryColor px-4 py-1 font-semibold hover:text-white rounded-md hover:bg-secondaryColor transition-all duration-300 active:bg-yellow-600">
+            </button> : <button onClick={() => signIn()} style={{ color: "#F3F4F6" }} className="uppercase text-sm border-[1px] border-primaryColor hover.borderColor-secondaryColor px-4 py-1 font-semibold hover:text-white rounded-md hover:bg-secondaryColor transition-all duration-300 active:bg-yellow-600">
               Sign In
             </button>
           }
@@ -58,10 +82,12 @@ const Header = () => {
         {/* Mobile Menu */}
         <div className={`lg:hidden fixed inset-0 bg-black bg-opacity-70 z-50 ${isActive ? 'block' : 'hidden'}`}>
           <ul className="text-white text-center mt-10">
-            <Link href="/" ><li onClick={handleClick} className={`block my-4 ${isActive ? 'active:text-secondaryColor' : ''}`} >Home</li></Link>
-            <Hashlink href="/#posts"><li className={`block my-4 ${isActive ? 'active:text-secondaryColor' : ''}`} >Blogs</li></Hashlink>
-            <Link href="/team"><li className={`block my-4 ${isActive ? 'active:text-secondaryColor' : ''}`} >Team</li></Link>
-            <Link href="/contact"><li className={`block my-4 ${isActive ? 'active:text-secondaryColor' : ''}`}>Contact</li></Link>
+            <Link href="/" ><li onClick={handleClick} className={`block my-4 ${isCurrentRoute('/') ? 'active:text-secondaryColor' : ''}`} >Home</li></Link>
+            <Link href="/blogs"><li className={`block my-4 ${isCurrentRoute('/blogs') ? 'active:text-secondaryColor' : ''}`} >Blogs</li></Link>
+            <Link href="/activities"><li className={`headerLi ${isCurrentRoute('/activities') ? 'active:text-secondaryColor' : ''}`}>Activities</li></Link>
+            <Link href="/team"><li className={`block my-4 ${isCurrentRoute('/team') ? 'active:text-secondaryColor' : ''}`} >Team</li></Link>
+            <Link href="https://iitbaero.github.io/"><li className={`headerLi ${isCurrentRoute('https://iitbaero.github.io/') ? 'active:text-secondaryColor' : ''}`}>Damp</li></Link>
+            <Link href="/contact"><li className={`block my-4 ${isCurrentRoute('/contact') ? 'active:text-secondaryColor' : ''}`}>Contact</li></Link>
           </ul>
         </div>
       </div>
