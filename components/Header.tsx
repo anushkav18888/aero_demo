@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   // Function to check if a given path matches the current route
-  const isCurrentRoute = (path) => {
+  const isCurrentRoute = (path:any) => {
     return router.pathname === path;
   };
 

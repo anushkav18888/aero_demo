@@ -7,7 +7,8 @@ import bannerImgThree from "../public/images/bannerImgThree.jpg";
 import bannerImgOne from "../public/images/bannerImgFour.jpg";
 import { useState } from 'react';
 
-function SampleNextArrow(props) {
+
+function SampleNextArrow(props:any) {
   const { onClick } = props;
 
   return (
@@ -25,7 +26,7 @@ function SampleNextArrow(props) {
   );
 }
 
-function SamplePrevArrow(props) {
+function SamplePrevArrow(props:any) {
   const { onClick } = props;
 
   return (
