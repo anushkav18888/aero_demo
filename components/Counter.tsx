@@ -70,6 +70,14 @@ const Bottom: React.FC = () => {
         .counter-label {
           text-align: center;
         }
+
+        @media (max-width: 768px) {
+          .counter-circle {
+            width: 80px;
+            height: 80px;
+            font-size: 24px;
+          }
+        }
       `}</style>
 
       <div className="counter-container" ref={inViewRef}>

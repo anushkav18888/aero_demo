@@ -11,11 +11,8 @@ const BannerBottom = () => {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     transition: 'filter 0.3s ease-in-out',
-    width: '99vw', // Set the width to 100% of the viewport width
-    height: '10px', // Change the height to 10 pixels (or any other value)
-   
-    top: 0, // Attach to the top
-    left: 0, // Attach to the left
+    width: '100%', // Set the width to 100% of the viewport width
+    height: 'auto', // Make the height auto to maintain aspect ratio
   };
 
   const handleActivity1Hover = () => {
@@ -27,7 +24,7 @@ const BannerBottom = () => {
   };
 
   return (
-    <div className="bg-grey text-black min-h-screen flex items-center justify-center" style={backgroundImageStyle}>
+    <div className="bg-grey text-black min-h-screen flex flex-col items-center justify-center" style={backgroundImageStyle}>
       <style jsx>{`
         .banner-title,
         .banner-subtitle,
@@ -38,17 +35,17 @@ const BannerBottom = () => {
           transition: transform 0.3s ease-in-out;
         }
         .activity1 {
-          width: 458px; // Set the width
-          height: 364px; // Set the height to make it a square
+          width: 100%; // Set the width to 100%
+          max-width: 400px; // Limit the maximum width for larger screens
+          height: auto; // Make the height auto to maintain aspect ratio
           overflow: hidden;
           border: 4px solid white;
           transform: scale(${isHovered ? 1.1 : 1});
           transition: transform 0.3s ease-in-out;
-          margin-left: -205px;
-          margin-top: 150px; // Add margin to separate it from text
+          margin: 0 auto 20px; // Center horizontally and add margin for spacing
         }
       `}</style>
-      <div className="max-w-4xl mx-20 flex flex-wrap items-center">
+      <div className="max-w-4xl mx-4 lg:mx-20 flex flex-col items-center lg:flex-row">
         <div
           className={`activity1 ${isHovered ? 'zoomed' : ''}`}
           onMouseOver={handleActivity1Hover}
@@ -63,18 +60,18 @@ const BannerBottom = () => {
             objectFit="cover"
           />
         </div>
-        <div className="w-full lg:w-1/2 p-9" style={{ marginTop: '210px' }}>
+        <div className="w-full lg:w-1/2 p-4 lg:p-9">
           <div>
-            <h1 className="text-5xl font-bold text-white mb-1 banner-title">
+            <h1 className="text-3xl lg:text-5xl font-bold text-white mb-1 banner-title">
               AEA
             </h1>
 
-            <h5 className="text-3xl font-bold text-white mb-10 banner-subtitle">
+            <h5 className="text-2xl lg:text-3xl font-bold text-white mb-4 lg:mb-10 banner-subtitle">
               WHO ARE WE?
             </h5>
-            <p className="text-lg text-white banner-description">
+            <p className="text-md lg:text-lg text-white banner-description">
               Aerospace Engineering Association (AEA) is a student body 
- representing students within the Aerospace Engineering department. Our job is to conduct and organize treks, cultural nights, orientations, and what not...
+              representing students within the Aerospace Engineering department. Our job is to conduct and organize treks, cultural nights, orientations, and what not...
             </p>
           </div>
         </div>
