@@ -31,11 +31,11 @@ const Footer = () => {
           <Link href="https://www.instagram.com/aea_iitb" target="_blank">
             <BsInstagram className="w-6 h-6 text-white/50 hover:text-white duration-300 cursor-pointer" />
           </Link>
-          <Link href = "https://www.facebook.com/profile.php?id=100083859086671">
+          <Link href = "https://www.facebook.com/aero.iitb.ac.in">
             <BsFacebook className="w-6 h-6 text-white/50 hover:text-white duration-300 cursor-pointer" />
           </Link>
           <Link href="https://www.linkedin.com/in/aerospace-engineering-association-iit-bombay-9a8052263/"><BsLinkedin className="w-6 h-6 text-white/50 hover:text-white duration-300 cursor-pointer" /></Link>
-          <Link href="mailto:aeacouncil@gmail.com"><BsMailbox className="w-6 h-6 text-white/50 hover:text-white duration-300 cursor-pointer" /></Link>
+          <Link href="mailto:dgsec@aero.iitb.ac.in"><BsMailbox className="w-6 h-6 text-white/50 hover:text-white duration-300 cursor-pointer" /></Link>
         </div>
       </div>
     </div>

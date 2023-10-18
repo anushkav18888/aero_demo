@@ -4,6 +4,7 @@ import {
   FaLinkedin,
   FaFacebook,
 } from "react-icons/fa";
+import Head from "next/head";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { motion } from "framer-motion";
@@ -13,6 +14,10 @@ function Contact() {
     <>
       <Header />
       <div className="min-h-screen flex flex-col justify-center">
+      <Head>
+       
+        <link rel="icon" href="/plane5.png" />
+      </Head>
         <motion.div
           className="max-w-full lg:max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg"
           initial={{ opacity: 0, y: -50 }}
@@ -36,11 +41,11 @@ function Contact() {
               >
                 <FaEnvelope className="text-blue-600 mr-3 w-16 h-16" />
                 <a
-                  href="mailto:"
+                  href="mailto: dgsec@aero.iitb.ac.in"
                   className="textColor text-xl hover:text-blue-600 transition-colors"
                   target="_blank"
                 >
-                  aeacouncil@gmail.com
+                 Mail Us
                 </a>
               </motion.div>
               <motion.div
@@ -78,7 +83,7 @@ function Contact() {
               >
                 <FaFacebook className="text-blue-600 mr-3 w-16 h-16" />
                 <a
-                  href="https://www.facebook.com/profile.php?id=100083859086671"
+                  href="https://www.facebook.com/aero.iitb.ac.in"
                   className="textColor text-xl hover:text-blue-600 transition-colors"
                   target="_blank"
                 >

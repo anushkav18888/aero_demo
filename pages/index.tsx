@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Innovation and discovery beyond our skies</title>
-        <link rel="icon" href="/smallLogo.ico" />
+        <link rel="icon" href="/plane5.png" />
       </Head>
       
 

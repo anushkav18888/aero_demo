@@ -49,13 +49,13 @@ const Banner = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 4000,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     autoplay: true,        // Enable autoplay
-    autoplaySpeed: 7000,   // Set the interval to 5000 milliseconds (5 seconds)
+    autoplaySpeed: 10000,   // Set the interval to 5000 milliseconds (5 seconds)
   };
 
   return (

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import {
   FaFacebookF,
   // FaTwitter,
@@ -10,6 +11,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const teamMembers = [
+
   {
     name: "Pratham Patel",
     role: "DGSec",
@@ -156,6 +158,9 @@ const team = () => {
           // backgroundColor: "#18181B",
         }}
       >
+          <Head>
+  <link rel="icon" href="/plane5.png" />
+</Head>
         {teamMembers.map((member) => (
           <div
             key={member.name}

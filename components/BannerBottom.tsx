@@ -73,9 +73,8 @@ const BannerBottom = () => {
               WHO ARE WE?
             </h5>
             <p className="text-lg text-white banner-description">
-              Aerospace is a dynamic and pioneering field that encompasses the
-              study, design, development, and exploration of Earth's atmosphere
-              and beyond...
+              Aerospace Engineering Association (AEA) is a student body 
+ representing students within the Aerospace Engineering department. Our job is to conduct and organize treks, cultural nights, orientations, and what not...
             </p>
           </div>
         </div>

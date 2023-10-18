@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from "next/head";
 import "slick-carousel/slick/slick.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -24,6 +25,10 @@ return (
         {/* ============ Post Part Start here ========= */}
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 py-6 px-4 textColor" >
+        <Head>
+        
+        <link rel="icon" href="/plane5.png" />
+      </Head>
           {
             posts.map((post) => (
               <Link key={post._id} href={`/post/${post.slug.current}`}>
