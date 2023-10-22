@@ -15,9 +15,11 @@ type CounterBoxProps = {
   value: number;
 };
 
-const slowConfig = { duration: 4000, tension: 300, friction: 10 };
+const slowConfig = { duration: 2500, tension: 300, friction: 10 };
 
 const CounterBox: React.FC<CounterBoxProps> = ({ value }) => {
+  const displayValue = value >= 25 ? '25+' : value;
+
   const { number } = useSpring({
     from: { number: 0 },
     number: value,
@@ -27,7 +29,25 @@ const CounterBox: React.FC<CounterBoxProps> = ({ value }) => {
   return (
     <div className="counter-circle">
       <animated.div className="animated-number">
-        {number.interpolate((num) => Math.floor(num))}
+        {number.interpolate((num) => Math.floor(num) === 25 ? '25+' : Math.floor(num))}
+      </animated.div>
+    </div>
+  );
+};
+
+const CounterBox1: React.FC<CounterBoxProps> = ({ value }) => {
+  const displayValue = value >= 600 ? '600+' : value;
+
+  const { number } = useSpring({
+    from: { number: 0 },
+    number: value,
+    config: slowConfig,
+  });
+
+  return (
+    <div className="counter-circle">
+      <animated.div className="animated-number">
+        {number.interpolate((num) => Math.floor(num) === 600 ? '600+' : Math.floor(num))}
       </animated.div>
     </div>
   );
@@ -59,7 +79,7 @@ const Bottom: React.FC = () => {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 10px 0;
+          margin: 4px 3px;
         }
 
         .animated-number {
@@ -88,11 +108,11 @@ const Bottom: React.FC = () => {
             </div>
             <div className="counter-label" style={{ fontWeight: 'bold' }}>Department Rank Worldwide</div>
             <div className="counter-circle">
-              <CounterBox value={30} />
+              <CounterBox value={25} />
             </div>
             <div className="counter-label" style={{ fontWeight: 'bold' }}>Faculty</div>
             <div className="counter-circle">
-              <CounterBox value={700} />
+              <CounterBox1 value={600} />
             </div>
             <div className="counter-label" style={{ fontWeight: 'bold' }}>Students</div>
           </>

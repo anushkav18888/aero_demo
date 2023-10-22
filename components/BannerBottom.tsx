@@ -70,8 +70,8 @@ const BannerBottom = () => {
               WHO ARE WE?
             </h5>
             <p className="text-md lg:text-lg text-white banner-description">
-              Aerospace Engineering Association (AEA) is a student body 
-              representing students within the Aerospace Engineering department. Our job is to conduct and organize treks, cultural nights, orientations, and what not...
+            Aerospace Engineering Association (AEA) is the prime student body of IIT Bombay
+              representing students within the Aerospace Engineering department. We conduct events all round the year catering to both academic and leisure needs for the faculties and students, namely Traditional Day, Trips, Informal batch parties, Sports day, etc. Apart from these, we also aim to promote the research and academic environment in the department by conducting seminars, guest lectures, discussions.
             </p>
           </div>
         </div>
