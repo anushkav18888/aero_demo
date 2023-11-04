@@ -33,16 +33,18 @@ return (
             posts.map((post) => (
               <Link key={post._id} href={`/post/${post.slug.current}`}>
                 <div className="border-[1px] border-white border-opacity-40 h-[450px] group">
-                  <div className="h-3/5 w-full overflow-hidden">
-                    <Image width={380} height={350} src={urlFor(post.mainImage).url()!} alt={""} className="w-full h-full object-cover brightness-75 group-hover:brightness-100 duration-300 group-hover:scale-110" />
+                  <div className="h-2/3 w-full overflow-hidden">
+                    <Image width={380} height={380} src={urlFor(post.mainImage).url()!} alt={""} className="w-full h-full object-cover brightness-75 group-hover:brightness-100 duration-300 group-hover:scale-110" />
                   </div>
                   <div className="h-2/5 w-full flex flex-col justify-center">
                     <div className="flex justify-between items-center px-4 py-1 border-b-[1px] border-b-gray-500">
-                      <p>{post.title}</p>
-                      <a href={post.author.linkedin}><img className="w-12 h-12 rounded-full object-cover" src={urlFor(post.author.image).url()!} alt="authorImg" /></a>
+                    <span className="font-semibold text-secondaryColor" style={{ fontSize: '25px' }}>
+                  <p>{post.title}</p>
+                  </span>
+
                     </div>
                     <p className="py-2 px-4 text-base">
-                      {post.description.substring(0, 60)}... by - <a href={post.author.linkedin}><span className="font-semibold text-secondaryColor" >{post.author.name}</span></a>
+                      {post.description.substring(0, 60)}... <a href={post.author.linkedin}><span className="font-semibold text-secondaryColor" ></span></a>
                     </p>
                   </div>
                 </div>

@@ -50,35 +50,30 @@ const Post = ({ post }: Props) => {
         <>
             <Header />
             {/* main Image */}
-            <img className='w-full h-full object-cover' src={urlFor(post.mainImage).url()!} alt="coverImage" />
+            <img
+  src={urlFor(post.mainImage).url()!}
+  alt="coverImage"
+  style={{
+    width: '100%',      // 3/4th width
+    maxHeight: '77vh', // Cover the height of the screen or less
+    objectFit: 'contain' // Maintain aspect ratio and fit within the container
+  }}
+/>
+
             {/* Article */}
             <div className=' max-w-3xl mx-auto mb-10 p-5 textColor ' style={{ backgroundColor: "#18181B" }}>    {/*max-w-3xl if I want to take the thing to middle*/}
                 <article className='w-full mx-auto p-5 '>
-                    <h1 className='font-titleFont font-medium text-[32px] text-primary border-b-[1px] border-b-cyan-800 mt-10 mb-3'>{post.title}</h1>
+                <h1 className='font-titleFont font-medium text-[32px] text-primary text-secondaryColor border-b-[1px] border-b-cyan-800 mt-10 mb-3'>
+  {post.title}
+</h1>
+
                     <h2 className='font-bodyFont text-[18px] text-gray-500 mb-2'>
                         {post.description}
                     </h2>
                     <div className="flex items-center gap-2">
-                        <a href={post.author.linkedin}>
-                            <img
-                                src={urlFor(post.author.image).url()!}
-                                alt="authorImg"
-                                className="rounded-full w-12 h-12 object-cover bg-red-400"
-                            />
-                        </a>
-                        <p className="font-bodyFont text-base">
-                            Blog post by{" "}
-                            {post.author.linkedin ? (
-                                <a href={post.author.linkedin}>
-                                    <span className="font-bold text-secondaryColor">
-                                        {post.author.name}
-                                    </span>
-                                </a>
-                            ) : (
-                                <span className="font-bold text-secondaryColor">
-                                    {post.author.name}
-                                </span>
-                            )}
+                    
+                        <p className="font-bodyFont text-base ">
+                           
                             {post.category} - published on{' '}
                             {format(new Date(post.publishedAt), 'MMMM dd, yyyy')}
                         </p>
