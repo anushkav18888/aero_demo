@@ -54,7 +54,23 @@ const Header = () => {
         </div>
   
 
-
+ <div className="flex items-center gap-8 text-lg">
+          <div className="flex items-center gap-1">
+            <img
+              className="w-8 h-8 rounded-full"
+              src={session ? session?.user!.image! : "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg"}
+              alt="logo"
+            />
+            <p className="text-sm font-medium" style={{ color: "#F3F4F6" }}>{session ? session?.user!.name : "Hello Stranger"}</p>
+          </div>
+          {
+            session ? <button onClick={() => signOut()} style={{ color: "#F3F4F6" }} className="uppercase text-sm border-[1px] border-primaryColor hover:border-secondaryColor px-4 py-1 font-semibold hover:text-white rounded-md hover.bg-secondaryColor transition-all duration-300 active:bg-yellow-600">
+              Sign Out
+            </button> : <button onClick={() => signIn()} style={{ color: "#F3F4F6" }} className="uppercase text-sm border-[1px] border-primaryColor hover.borderColor-secondaryColor px-4 py-1 font-semibold hover.text-white rounded-md hover.bg-secondaryColor transition-all duration-300 active.bg-yellow-600">
+              Sign In
+            </button>
+          }
+        </div>
         <div className="lg:hidden">
           <button onClick={handleClick} className="text-white">
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
