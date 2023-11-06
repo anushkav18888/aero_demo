@@ -30,10 +30,7 @@ export const authOptions = {
   //   clientId: process.env.INSTAGRAM_CLIENT_ID,
   //   clientSecret: process.env.INSTAGRAM_CLIENT_SECRET
   // })
-    FacebookProvider({
-    clientId: process.env.FACEBOOK_CLIENT_ID,
-    clientSecret: process.env.FACEBOOK_CLIENT_SECRET
-  })
+ 
     // EmailProvider({
     //   server: {
     //     host: process.env.EMAIL_SERVER_HOST,
