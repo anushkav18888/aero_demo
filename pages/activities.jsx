@@ -7,13 +7,13 @@ import Header from '../components/Header';
 import Head from "next/head";
 import bannerImgTwo from '../public/images/ug_oreo.jpeg';
 import bannerImgThree from '../public/images/pg_oreo.jpeg';
-import bannerImgFour from '../public/images/rakshab.jpeg';
+import bannerImgFour from '../public/images/dusherra.jpeg';
 
 const images = ['/images/ug_oreo.jpeg', '/images/pg_oreo.jpeg', '/images/rakshab.jpeg'];
 const imageText = [
   'UG Freshers-2023',
   'PG Freshers-2023',
-  'Ganesh Chaturthi 2023',
+  'AEA wishes Happy Dussehra 2023',
 ];
 
 const HeaderFooterCarousel = () => {
