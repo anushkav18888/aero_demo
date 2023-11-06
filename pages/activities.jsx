@@ -9,7 +9,7 @@ import bannerImgTwo from '../public/images/ug_oreo.jpeg';
 import bannerImgThree from '../public/images/pg_oreo.jpeg';
 import bannerImgFour from '../public/images/dusherra.jpeg';
 
-const images = ['/images/ug_oreo.jpeg', '/images/pg_oreo.jpeg', '/images/rakshab.jpeg'];
+const images = ['/images/ug_oreo.jpeg', '/images/pg_oreo.jpeg', '/images/dusherra.jpeg'];
 const imageText = [
   'UG Freshers-2023',
   'PG Freshers-2023',
