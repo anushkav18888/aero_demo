@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Image from 'next/image';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 import Head from "next/head";
-import bannerImgTwo from '../public/images/ug_oreo.jpeg';
-import bannerImgThree from '../public/images/pg_oreo.jpeg';
-import bannerImgFour from '../public/images/dusherra.jpeg';
+import bannerImgTwo from '../../public/images/ug_oreo.jpeg';
+import bannerImgThree from '../../public/images/pg_oreo.jpeg';
+import bannerImgFour from '../../public/images/dusherra.jpeg';
 
 const images = ['/images/ug_oreo.jpeg', '/images/pg_oreo.jpeg', '/images/dusherra.jpeg'];
 const imageText = [

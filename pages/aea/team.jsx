@@ -7,8 +7,8 @@ import {
   FaInstagram,
   FaBold,
 } from "react-icons/fa";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 
 const teamMembers = [
 

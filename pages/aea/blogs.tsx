@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from "next/head";
 import "slick-carousel/slick/slick.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import { sanityClient, urlFor } from "../sanity"
-import { Post as PostType } from "../typings";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import { sanityClient, urlFor } from "../../sanity"
+import { Post as PostType } from "../../typings";
 import Link from 'next/link';
 import Image from 'next/image';
 

@@ -32,23 +32,23 @@ const Header = () => {
         
         <div className="hidden lg:inline-flex gap-8 uppercase text-sm font-semibold">
           <ul className="list-none flex gap-8">
-            <li className={`headerLi ${isCurrentRoute('/') ? 'text-secondaryColor' : ''}`}>
-              <Link href="/">Home</Link>
+            <li className={`headerLi ${isCurrentRoute('/aea') ? 'text-secondaryColor' : ''}`}>
+              <Link href="/aea">Home</Link>
             </li>
-            <li className={`headerLi ${isCurrentRoute('/blogs') ? 'text-secondaryColor' : ''}`}>
-              <Link href="/blogs">Blogs</Link>
+            <li className={`headerLi ${isCurrentRoute('/aea/blogs') ? 'text-secondaryColor' : ''}`}>
+              <Link href="/aea/blogs">Blogs</Link>
             </li>
-            <li className={`headerLi ${isCurrentRoute('/activities') ? 'text-secondaryColor' : ''}`}>
-              <Link href="/activities">Activities</Link>
+            <li className={`headerLi ${isCurrentRoute('/aea/activities') ? 'text-secondaryColor' : ''}`}>
+              <Link href="/aea/activities">Activities</Link>
             </li>
-            <li className={`headerLi ${isCurrentRoute('/team') ? 'text-secondaryColor' : ''}`}>
-              <Link href="/team">Team</Link>
+            <li className={`headerLi ${isCurrentRoute('/aea/team') ? 'text-secondaryColor' : ''}`}>
+              <Link href="/aea/team">Team</Link>
             </li>
             <li className={`headerLi ${isCurrentRoute('https://iitbaero.github.io/') ? 'text-secondaryColor' : ''}`}>
               <Link href="https://iitbaero.github.io/" target="_blank">Damp</Link>
             </li>
-            <li className={`headerLi ${isCurrentRoute('/contact') ? 'text-secondaryColor' : ''}`}>
-              <Link href="/contact">Contact</Link>
+            <li className={`headerLi ${isCurrentRoute('/aea/contact') ? 'text-secondaryColor' : ''}`}>
+              <Link href="/aea/contact">Contact</Link>
             </li>
           </ul>
         </div>
