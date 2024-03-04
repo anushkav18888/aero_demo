@@ -102,6 +102,7 @@ const Post = ({ post }: Props) => {
                     </div>
 
                 </article>
+     {/*           
                 <hr className='max-w-lg my-5 mx-auto border-1px border-secondaryColor' />
                 {
                     submitted ? <div className='flex flex-col items-center gap-2 p-10 my-10 bg-bgColor text-white mx-auto'>
@@ -111,9 +112,10 @@ const Post = ({ post }: Props) => {
                         <p className='text-xs text-secondaryColor uppercase font-titleFont font-bold'>Enjoyed this article?</p>
                         <h3 className='font-titlefont text-3xl font-bold'>Leave a comment below!</h3>
                         <hr className='py-3 mt-2' />
-
+*/}
                         {/* Form will start here */}
                         {/* Generate Id for hook forms  */}
+                        {/*
                         <input {...register("_id")} type="hidden" name='_id' value={post._id} />
                         <form onSubmit={handleSubmit(onSubmit)} className='mt-7 flex flex-col gap-6'>
                             <label className='flex flex-col' >
@@ -163,7 +165,7 @@ const Post = ({ post }: Props) => {
                             )
                         }
                         {/* Comments  */}
-
+{/*
                         <div className='w-full flex flex-col p-10 my-10 mx-auto shadow-bgColor shadow-lg space-y-2'>
                             <h3 className='text-3xl font-titleFont font-semibold'>Comments</h3>
                             <hr />
@@ -174,10 +176,13 @@ const Post = ({ post }: Props) => {
                                     </div>
                                 ))
                             }
+                            
                         </div>
+                        */}
                     </div>
-                }
+               {/*} }
             </div>
+            */}
             <Footer />
         </>
     )

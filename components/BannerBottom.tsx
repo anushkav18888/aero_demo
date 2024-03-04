@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Activity1 from "../public/images/group.jpeg";
-import Activity2 from "../public/images/peakpx.jpg";
+import Activity1 from "../public/aea/images/group.jpeg";
+import Activity2 from "../public/aea/images/peakpx.jpg";
 
 const BannerBottom = () => {
   const [isHovered, setIsHovered] = useState(false);

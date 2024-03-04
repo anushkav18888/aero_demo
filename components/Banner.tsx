@@ -2,17 +2,17 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Slider from 'react-slick';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import bannerImgFour from '../public/images/bannerImgOne.jpg';
-import bannerImgTwo from '../public/images/bannerImgTwo.jpg';
-import bannerImgThree from '../public/images/bannerImgThree.jpg';
-import bannerImgOne from '../public/images/bannerImgFour.jpg';
+import bannerImgFour from '../public/aea/images/bannerImgOne.jpg';
+import bannerImgTwo from '../public/aea/images/bannerImgTwo.jpg';
+import bannerImgThree from '../public/aea/images/bannerImgThree.jpg';
+import bannerImgOne from '../public/aea/images/bannerImgFour.jpg';
 
 function MobileNextArrow(props: any) {
   const { onClick } = props;
 
   return (
     <div
-      className="w-36 h-8 absolute bottom-2 z-30 right-4 border-[1px] px-2 bg-black/50 shadow-btnShadow border-gray-900"
+      className="w-36 h-8 absolute bottom-2 z-30 right-4 border-[1px] px-1 bg-black/50 shadow-btnShadow border-gray-900"
       onClick={onClick}
     >
       <div className="w-full h-full text-gray-300 text-sm uppercase relative flex items-center justify-end cursor-pointer group">

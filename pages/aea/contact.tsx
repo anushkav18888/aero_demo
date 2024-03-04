@@ -16,7 +16,7 @@ function Contact() {
       <div className="min-h-screen flex flex-col justify-center">
       <Head>
        
-        <link rel="icon" href="/plane5.png" />
+        <link rel="icon" href="/aea/plane3.png" />
       </Head>
         <motion.div
           className="max-w-full lg:max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg"

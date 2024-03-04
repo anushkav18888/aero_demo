@@ -27,7 +27,7 @@ return (
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 py-6 px-4 textColor" >
         <Head>
         
-        <link rel="icon" href="/plane5.png" />
+        <link rel="icon" href="/aea/plane3.png" />
       </Head>
           {
             posts.map((post) => (

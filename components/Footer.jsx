@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logoDark from "../public/images/logoDark.png";
+import logoDark from "../public/aea/images/logoDark.png";
 import Link from "next/link";
 
 import {
@@ -34,7 +34,7 @@ const Footer = () => {
           <Link href = "https://www.facebook.com/aero.iitb.ac.in">
             <BsFacebook className="w-6 h-6 text-white/50 hover:text-white duration-300 cursor-pointer" />
           </Link>
-          <Link href="https://www.linkedin.com/in/aerospace-engineering-association-iit-bombay-9a8052263/"><BsLinkedin className="w-6 h-6 text-white/50 hover:text-white duration-300 cursor-pointer" /></Link>
+          <Link href="https://www.linkedin.com/company/aea-iitb/"><BsLinkedin className="w-6 h-6 text-white/50 hover:text-white duration-300 cursor-pointer" /></Link>
           <Link href="mailto:dgsec@aero.iitb.ac.in"><BsMailbox className="w-6 h-6 text-white/50 hover:text-white duration-300 cursor-pointer" /></Link>
         </div>
       </div>
