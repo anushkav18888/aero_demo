@@ -37,8 +37,8 @@ const Header = () => {
         </Link>
         <div className="hidden lg:inline-flex gap-8 uppercase text-sm font-semibold ">
           <ul className="list-none flex gap-8">
-            <li className={`headerLi ${isCurrentRoute('/aea') ? 'text-secondaryColor' : ''}`}>
-              <Link href="/aea">Home</Link>
+            <li className={`headerLi ${isCurrentRoute('/') ? 'text-secondaryColor' : ''}`}>
+              <Link href="/">Home</Link>
             </li>
             <li className={`headerLi ${isCurrentRoute('/aea/blogs') ? 'text-secondaryColor glow-effect' : ''}`}>
    <Link href="/aea/blogs">Blogs</Link>
@@ -85,8 +85,8 @@ const Header = () => {
         {/* Mobile Menu */}
         <div className={`lg:hidden fixed inset-0 bg-black bg-opacity-70 z-50 ${isActive ? 'block' : 'hidden'}`}>
           <ul className="text-white text-center mt-10">
-            <li onClick={handleClick} className={`block my-4 ${isCurrentRoute('/aea') ? 'active:text-secondaryColor' : ''}`} >
-              <Link href="/aea">Home</Link>
+            <li onClick={handleClick} className={`block my-4 ${isCurrentRoute('/') ? 'active:text-secondaryColor' : ''}`} >
+              <Link href="/">Home</Link>
             </li>
             <li onClick={handleClick} className={`block my-4 ${isCurrentRoute('/aea/blogs') ? 'active:text-secondaryColor' : ''}`}>
               <Link href="/aea/blogs">Blogs</Link>

@@ -1,11 +1,11 @@
 import Head from "next/head";
 import "slick-carousel/slick/slick.css";
-import Banner from "../../components/Banner";
-import BannerBottom from "../../components/BannerBottom";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Counter from "../../components/Counter";
-import { sanityClient, urlFor } from "../../sanity"
+import Banner from "../components/Banner";
+import BannerBottom from "../components/BannerBottom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Counter from "../components/Counter";
+import { sanityClient, urlFor } from "../sanity"
 
 export default function Home() {
 
