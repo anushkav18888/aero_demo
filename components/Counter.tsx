@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
-import Activity2 from '../public/aea/images/counterimg.jpeg';
+import Activity2 from '../public/images/counterimg.jpeg';
 
 const backgroundImageStyle = {
   backgroundImage: `url(${Activity2.src})`,

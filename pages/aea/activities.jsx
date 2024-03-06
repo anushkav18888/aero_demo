@@ -7,7 +7,7 @@ import Header from '../../components/Header';
 import Head from "next/head";
 
 
-const images = ['/aea/images/ug_oreo.jpeg', '/aea/images/pg_oreo.jpeg', '/aea/images/dusherra.jpeg'];
+const images = ['/images/ug_oreo.jpeg', '/images/pg_oreo.jpeg', '/images/dusherra.jpeg'];
 const imageText = [
   'UG Freshers-2023',
   'PG Freshers-2023',
@@ -29,7 +29,7 @@ const HeaderFooterCarousel = () => {
     <div>
         <Head>
         <title>Innovation and discovery beyond our skies</title>
-        <link rel="icon" href="/aea/plane3.png" />
+        <link rel="icon" href="/plane3.png" />
       </Head>
       <>
         <Header />
@@ -57,7 +57,7 @@ const HeaderFooterCarousel = () => {
 
       <style jsx>{`
         .carousel-container {
-          background: url('/aea/images/act_bg.jpeg');
+          background: url('/images/act_bg.jpeg');
           background-size: cover;
           background-position: center;
           min-height: 70vh;

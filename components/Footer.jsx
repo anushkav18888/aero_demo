@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logoDark from "../public/aea/images/logoDark.png";
+import logoDark from "../public/images/logoDark.png";
 import Link from "next/link";
 
 import {

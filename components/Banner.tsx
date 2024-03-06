@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Slider from 'react-slick';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import bannerImgFour from '../public/aea/images/bannerImgOne.jpg';
-import bannerImgTwo from '../public/aea/images/bannerImgTwo.jpg';
-import bannerImgThree from '../public/aea/images/bannerImgThree.jpg';
-import bannerImgOne from '../public/aea/images/bannerImgFour.jpg';
+import bannerImgFour from '../public/images/bannerImgOne.jpg';
+import bannerImgTwo from '../public/images/bannerImgTwo.jpg';
+import bannerImgThree from '../public/images/bannerImgThree.jpg';
+import bannerImgOne from '../public/images/bannerImgFour.jpg';
 
 function MobileNextArrow(props: any) {
   const { onClick } = props;
@@ -116,7 +116,7 @@ const Banner = () => {
       <Slider {...settings}>
         <div className="relative">
           <Image
-            className="w-full md:h-[650px] object-cover"
+            className="w-full md:h-[650px] "
             src={bannerImgOne}
             loading={'eager'}
             alt="bannerImgOne"
@@ -124,7 +124,7 @@ const Banner = () => {
         </div>
         <div className="relative">
           <Image
-            className="w-full md:h-[650px] object-cover"
+            className="w-full md:h-[650px] "
             src={bannerImgTwo}
             loading={'lazy'}
             alt="bannerImgTwo"
@@ -132,7 +132,7 @@ const Banner = () => {
         </div>
         <div className="relative">
           <Image
-            className="w-full md:h-[650px] object-cover"
+            className="w-full md:h-[650px] "
             src={bannerImgThree}
             loading={'lazy'}
             alt="bannerImgThree"
@@ -140,7 +140,7 @@ const Banner = () => {
         </div>
         <div className="relative">
           <Image
-            className="w-full md:h-[650px] object-cover"
+            className="w-full md:h-[650px] "
             src={bannerImgFour}
             loading={'lazy'}
             alt="bannerImgFour"

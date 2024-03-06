@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: "Pratham Patel",
     role: "DGSec",
-    image: "/aea/images/profilesImages/pratham.jpg",
+    image: "/images/profilesImages/pratham.jpg",
     facebook:
       "https://www.facebook.com/pratham.patel.923?mibextid=2JQ9oc",
     linkedin: "https://www.linkedin.com/in/pratham-patel-20101b222",
@@ -24,7 +24,7 @@ const teamMembers = [
    {
     name: "Sourabh Chouhan ",
     role: "Deputy Department General Secretary",
-    image: "/aea/images/profilesImages/sourabh.jpg",
+    image: "/images/profilesImages/sourabh.jpg",
     facebook:
       "https://www.facebook.com/sourabh.chouhan.77398?mibextid=ZbWKwL",
     linkedin: "https://www.linkedin.com/in/sourabh-chouhan-252510241",
@@ -34,7 +34,7 @@ const teamMembers = [
     {
     name: "Rajat Soni",
     role: "Deputy Department General Secretary (PG)",
-    image: "/aea/images/profilesImages/rajat.jpg",
+    image: "/images/profilesImages/rajat.jpg",
     facebook: "https://www.facebook.com/Rajat.Sarkar.305069",
     linkedin: "https://www.linkedin.com/in/rajat-soni-96797474732317290305",
     instagram: "https://www.instagram.com/rajat_soni03/?hl=en",
@@ -42,7 +42,7 @@ const teamMembers = [
     {
     name: "Ninu Limboo",
     role: "Department PG Representative",
-    image: "/aea/images/profilesImages/ninu.jpeg",
+    image: "/images/profilesImages/ninu.jpeg",
     facebook: "https://www.facebook.com/pratham.patel.923?mibextid=2JQ9oc",
     linkedin: "https://www.linkedin.com/in/ninu-limboo-5407a11b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiJjQf5xQSfOTZ4spvvxD2Q%3D%3D",
     instagram: "https://www.instagram.com/naomi_khewa/",
@@ -50,7 +50,7 @@ const teamMembers = [
     {
     name: "Chowdegowda C N ",
     role: "PG Department Cultural secretary ",
-    image: "/aea/images/profilesImages/naganna.jpg",
+    image: "/images/profilesImages/naganna.jpg",
     facebook: "https://www.facebook.com/profile.php?id=61550476272019",
     linkedin: "https://www.linkedin.com/in/chowdegowda-c-n-6a584a152",
     instagram: "https://www.instagram.com/chowdegowd/",
@@ -58,7 +58,7 @@ const teamMembers = [
   {
     name: "Jugal Shah",
     role: "Events Nominee",
-    image: "/aea/images/profilesImages/jugal.jpg",
+    image: "/images/profilesImages/jugal.jpg",
     facebook:
       "https://www.facebook.com/profile.php?id=61550258878577&mibextid=ZbWKwL",
     linkedin: "https://www.linkedin.com/in/jugal-shah-026ab1253",
@@ -67,7 +67,7 @@ const teamMembers = [
   {
     name: "Ronak sonkiya",
     role: "Events Nominee",
-    image: "/aea/images/profilesImages/ronak.JPG",
+    image: "/images/profilesImages/ronak.JPG",
     facebook: "https://www.facebook.com/profile.php?id=100086681690731",
     linkedin: "https://www.linkedin.com/in/ronak-sonkiya-8a6660269",
     instagram: "https://instagram.com/ronak_sonkiya?igshid=MjEwN2IyYWYwYw==",
@@ -75,7 +75,7 @@ const teamMembers = [
     {
     name: "Arhat Gedam",
     role: "Events Nominee",
-    image: "/aea/images/profilesImages/arhat.JPG",
+    image: "/images/profilesImages/arhat.JPG",
     facebook: "https://www.facebook.com/profile.php?id=100086681690731",
     linkedin: "https://www.linkedin.com/in/arhat-gedam-ba3a75253/",
     instagram: "https://www.instagram.com/arhat_293/",
@@ -84,7 +84,7 @@ const teamMembers = [
  {
     name: "Hrutik sanjay pokharkar  ",
     role: "Design Nominee",
-    image: "/aea/images/profilesImages/Hrutik sanjay pokharkar .jpg",
+    image: "/images/profilesImages/Hrutik sanjay pokharkar .jpg",
     facebook:
       "https://www.facebook.com/profile.php?id=100005450266635&mibextid=9R9pXO",
     linkedin: "https://www.linkedin.com/in/hrutik-pokharkar-9b445713a",
@@ -93,7 +93,7 @@ const teamMembers = [
   {
     name: "Raghav Agrawal ",
     role: "Design Nominee",
-    image: "/aea/images/profilesImages/raghav.JPG",
+    image: "/images/profilesImages/raghav.JPG",
     facebook:
       "https://www.facebook.com/profile.php?id=100085359233047",
     linkedin: "https://www.linkedin.com/in/raghavagraw/",
@@ -102,7 +102,7 @@ const teamMembers = [
   {
     name: "Adarsh Prajapati",
     role: "Media Nominee",
-    image: "/aea/images/profilesImages/Adarsh.JPG",
+    image: "/images/profilesImages/Adarsh.JPG",
     facebook: "https://www.facebook.com/profile.php?id=61550057250823",
     linkedin: "https://www.linkedin.com/in/adarsh-prajapati-47911b228/",
     instagram: "https://www.instagram.com/moraldo785/",
@@ -110,7 +110,7 @@ const teamMembers = [
   {
     name: "Anushka Verma",
     role: "Web Nominee",
-    image: "/aea/images/profilesImages/anushka.jpeg",
+    image: "/images/profilesImages/anushka.jpeg",
     facebook: "https://www.facebook.com/profile.php?id=100070530461675",
     linkedin: "https://www.linkedin.com/in/anushka-verma-534084217/",
     instagram: "https://www.instagram.com/anushkaverma18_/?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
@@ -118,7 +118,7 @@ const teamMembers = [
   {
     name: "Ghoshank Nanhe",
     role: "Content Nominee",
-    image: "/aea/images/profilesImages/ghoshank.jpg",
+    image: "/images/profilesImages/ghoshank.jpg",
     facebook:
       "https://www.facebook.com/ghoshank.nanhe.94",
     linkedin: "https://www.linkedin.com/in/ghoshank-nanhe-7b2124245",
@@ -128,7 +128,7 @@ const teamMembers = [
   {
     name: "Apurva Chavda",
     role: "PG OCR",
-    image: "/aea/images/profilesImages/apurva.JPG",
+    image: "/images/profilesImages/apurva.JPG",
     facebook: "https://www.facebook.com/apurva.chavda.741?mibextid=ZbWKwL",
     linkedin: "https://www.linkedin.com/in/adchavda741",
     instagram: "https://instagram.com/adchavda741?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
@@ -136,7 +136,7 @@ const teamMembers = [
   {
     name: "Kartik Vaishnav",
     role: "SARC Coordinator",
-    image: "/aea/images/profilesImages/karthik.JPG",
+    image: "/images/profilesImages/karthik.JPG",
     facebook:
       "https://www.facebook.com/kartik.vaishnav.140?mibextid=ZbWKwL",
     linkedin: "https://www.linkedin.com/in/kartik-vaishnav-12a758251",
@@ -160,7 +160,7 @@ const team = () => {
         }}
       >
           <Head>
-  <link rel="icon" href="/aea/plan3.png" />
+  <link rel="icon" href="/plan3.png" />
 </Head>
         {teamMembers.map((member) => (
           <div

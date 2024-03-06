@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { useRouter } from 'next/router';
 
-import logoDark from "../public/aea/images/logoDark.png";
+import logoDark from "../public/images/logoDark.png";
 
 const Header = () => {
   const { data: session } = useSession();

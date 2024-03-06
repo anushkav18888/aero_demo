@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Innovation and discovery beyond our skies</title>
-        <link rel="icon" href="/aea/plane3.png" />
+        <link rel="icon" href="/plane3.png" />
       </Head>
       
 

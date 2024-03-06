@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Activity1 from "../public/aea/images/group.jpeg";
-import Activity2 from "../public/aea/images/peakpx.jpg";
+import Activity1 from "../public/images/group.jpeg";
+import Activity2 from "../public/images/peakpx.jpg";
 
 const BannerBottom = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -46,20 +46,7 @@ const BannerBottom = () => {
         }
       `}</style>
       <div className="max-w-4xl mx-4 lg:mx-20 flex flex-col items-center lg:flex-row">
-        <div
-          className={`activity1 ${isHovered ? 'zoomed' : ''}`}
-          onMouseOver={handleActivity1Hover}
-          onMouseOut={handleActivity1MouseOut}
-        >
-          <Image
-            src={Activity1}
-            alt="Activity1"
-            layout="responsive"
-            width={400}
-            height={400}
-            objectFit="cover"
-          />
-        </div>
+
         <div className="w-full lg:w-1/2 p-4 lg:p-9">
           <div>
             <h1 className="text-3xl lg:text-5xl font-bold text-white mb-1 banner-title">
@@ -76,6 +63,8 @@ const BannerBottom = () => {
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 };
