@@ -4,6 +4,5 @@ module.exports = {
   
   images: {
     domains: ["cdn.sanity.io"],
-    path: "/aea/_next"
   }
 }
