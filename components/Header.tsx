@@ -86,7 +86,7 @@ const Header = () => {
         <div className={`lg:hidden fixed inset-0 bg-black bg-opacity-70 z-50 ${isActive ? 'block' : 'hidden'}`}>
           <ul className="text-white text-center mt-10">
             <li onClick={handleClick} className={`block my-4 ${isCurrentRoute('/') ? 'active:text-secondaryColor' : ''}`} >
-              <Link href="/">Home</Link>
+              <Link href="/aea">Home</Link>
             </li>
             <li onClick={handleClick} className={`block my-4 ${isCurrentRoute('/aea/blogs') ? 'active:text-secondaryColor' : ''}`}>
               <Link href="/aea/blogs">Blogs</Link>
