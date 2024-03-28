@@ -44,8 +44,8 @@ return (
 
                     </div>
                     <p className="py-2 px-4 text-base">
-                      {post.description.substring(0, 60)}... <a href={post.author.linkedin}><span className="font-semibold text-secondaryColor" ></span></a>
-                    </p>
+  {post.description.substring(0, 60)}... <span className="font-semibold text-secondaryColor"></span>
+</p>
                   </div>
                 </div>
               </Link>

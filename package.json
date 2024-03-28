@@ -35,6 +35,7 @@
     "react-intersection-observer": "^9.5.2",
     "react-portable-text": "^0.6.0",
     "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.22.3",
     "react-slick": "^0.29.0",
     "react-spring": "^9.7.3",
     "react-top-loading-bar": "^2.3.1",

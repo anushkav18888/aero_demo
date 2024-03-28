@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <div className="w-full h-20 border-b-[1px] border-b-black font-titleFont sticky top-0 z-50 px-4" style={{ backgroundColor: "#18181B" }}>
       <div className="max-w-7xl h-full mx-auto flex justify-between items-center">
-        <Link href="/aea">
+        <Link href="/">
           <div>
             <Image width={170} height={170} src={logoDark} alt="logoDark" />
           </div>
@@ -38,7 +38,7 @@ const Header = () => {
         <div className="hidden lg:inline-flex gap-8 uppercase text-sm font-semibold ">
           <ul className="list-none flex gap-8">
             <li className={`headerLi ${isCurrentRoute('/') ? 'text-secondaryColor' : ''}`}>
-              <Link href="/">Home</Link>
+              <Link href="/aea">Home</Link>
             </li>
             <li className={`headerLi ${isCurrentRoute('/aea/blogs') ? 'text-secondaryColor glow-effect' : ''}`}>
    <Link href="/aea/blogs">Blogs</Link>
